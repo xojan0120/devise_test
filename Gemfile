@@ -9,7 +9,7 @@ end
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.6'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+gem 'sqlite3', '~> 1.3.0'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
@@ -52,3 +52,30 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem 'bootstrap-sass', '3.4.1'
+gem 'bootstrap-will_paginate', '1.0.0'
+gem 'carrierwave', '1.2.2'
+gem 'config', '1.7.1'
+gem 'dotenv-rails'
+gem 'faker', '1.7.3'
+gem 'high_voltage'
+gem 'html2slim'
+gem 'jquery-rails', '4.3.1'
+gem 'mini_magick', '4.7.0'
+gem 'slim-rails'
+gem 'will_paginate', '3.1.6'
+group :development, :test do
+  gem 'chromedriver-helper'
+  gem 'factory_bot_rails', '~>4.10.0'
+  gem 'guard', '2.13.0'
+  gem 'guard-rspec', require: false
+  gem 'rspec-rails', '~>3.8.0'
+  gem 'spring-commands-rspec'
+  gem 'hirb'
+  gem 'hirb-unicode'
+end
+
+group :test do
+  gem 'shoulda-matchers', git: 'https://github.com/thoughtbot/shoulda-matchers.git', branch: 'rails-5'
+end
