@@ -59,7 +59,6 @@ gem 'carrierwave', '1.2.2'
 gem 'config', '1.7.1'
 gem 'dotenv-rails'
 gem 'faker', '1.7.3'
-gem 'high_voltage'
 gem 'html2slim'
 gem 'jquery-rails', '4.3.1'
 gem 'mini_magick', '4.7.0'
@@ -79,3 +78,6 @@ end
 group :test do
   gem 'shoulda-matchers', git: 'https://github.com/thoughtbot/shoulda-matchers.git', branch: 'rails-5'
 end
+
+gem 'devise'
+gem 'omniauth-twitter'
